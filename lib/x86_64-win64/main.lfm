@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 424
+  Left = 410
   Height = 523
-  Top = 115
+  Top = 94
   Width = 463
   BorderStyle = bsDialog
   Caption = 'Главное меню'
@@ -23858,5 +23858,18 @@ object Form1: TForm1
     Font.Quality = fqDraft
     ParentColor = False
     ParentFont = False
+  end
+  object Button5: TButton
+    Left = 0
+    Height = 40
+    Top = 424
+    Width = 136
+    Caption = 'Открыть свою музыку'
+    OnClick = Button5Click
+    TabOrder = 4
+  end
+  object OpenDialog1: TOpenDialog
+    left = 32
+    top = 352
   end
 end

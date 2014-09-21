@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 424
+  Left = 410
   Height = 523
-  Top = 115
+  Top = 94
   Width = 463
   BorderStyle = bsDialog
   Caption = 'Главное меню'
@@ -23813,5 +23813,63 @@ object Form1: TForm1
     Font.Quality = fqDraft
     ParentColor = False
     ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 24
+    Height = 49
+    Top = 272
+    Width = 93
+    Caption = 'Phone'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clBlue
+    Font.Height = -35
+    Font.Name = 'Comic Sans MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 184
+    Height = 40
+    Top = 280
+    Width = 73
+    Caption = 'Made'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clYellow
+    Font.Height = -29
+    Font.Name = 'Comic Sans MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 344
+    Height = 49
+    Top = 272
+    Width = 103
+    Caption = 'Maker'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clOlive
+    Font.Height = -35
+    Font.Name = 'Comic Sans MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Button5: TButton
+    Left = 0
+    Height = 40
+    Top = 424
+    Width = 136
+    Caption = 'Открыть свою музыку'
+    OnClick = Button5Click
+    TabOrder = 4
+  end
+  object OpenDialog1: TOpenDialog
+    left = 32
+    top = 352
   end
 end
