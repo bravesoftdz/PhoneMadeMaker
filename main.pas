@@ -18,6 +18,8 @@ type
     Button3: TButton;
     Button4: TButton;
     Image1: TImage;
+    Image2: TImage;
+    Image3: TImage;
     procedure Button3Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
   private
