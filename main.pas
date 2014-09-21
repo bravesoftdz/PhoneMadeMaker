@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls,
-  ExtCtrls,MMSystem;
+  ExtCtrls,MMSystem,dynlibs;
 
 type
 
@@ -39,7 +39,8 @@ type
 
 var
   Form1: TForm1;
-  filemusic:string;
+  filemusicstring:string;
+  filemusic:PChar;
 
 implementation
   uses unit1;
@@ -71,8 +72,9 @@ begin
    OpenDialog1.Execute;
    If OpenDialog1.Execute then
    begin
-   filemusic:=OpenDialog1.Filename;
-   sndPlaySound(OpenDialog1.Filename, snd_Async or snd_NoDefault);
+   filemusicstring:=OpenDialog1.Filename;
+   filemusic:=PChar(filemusicstring);
+   sndPlaySound(pchar(UTF8ToSys(filemusic)), snd_Async or snd_NoDefault);
    end;
 
 end;
