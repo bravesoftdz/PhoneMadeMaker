@@ -26,6 +26,7 @@ type
     Label3: TLabel;
     Label4: TLabel;
     OpenDialog1: TOpenDialog;
+    procedure Button1Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
     procedure Button4Click(Sender: TObject);
     procedure Button5Click(Sender: TObject);
@@ -53,6 +54,11 @@ end;
 procedure TForm1.Button3Click(Sender: TObject);
 begin
   Form2.Visible:=true;
+end;
+
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+
 end;
 
 procedure TForm1.Button4Click(Sender: TObject);

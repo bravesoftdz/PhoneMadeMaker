@@ -66,7 +66,7 @@ begin
    If OpenDialog1.Execute then
    begin
    filemusic:=OpenDialog1.Filename;
-   sndPlaySound(, snd_Async or snd_NoDefault);
+   sndPlaySound(OpenDialog1.Filename, snd_Async or snd_NoDefault);
    end;
 
 end;

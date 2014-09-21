@@ -16,6 +16,7 @@ type
     Label1: TLabel;
     procedure Button1Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
+    procedure Label1Click(Sender: TObject);
   private
     { private declarations }
   public
@@ -36,6 +37,11 @@ begin
 end;
 
 procedure TForm2.FormCreate(Sender: TObject);
+begin
+
+end;
+
+procedure TForm2.Label1Click(Sender: TObject);
 begin
 
 end;
