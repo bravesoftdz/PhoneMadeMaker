@@ -1,0 +1,41 @@
+object Form2: TForm2
+  Left = 397
+  Height = 183
+  Top = 252
+  Width = 535
+  Caption = 'Form2'
+  ClientHeight = 183
+  ClientWidth = 535
+  OnCreate = FormCreate
+  LCLVersion = '1.2.4.0'
+  object Label1: TLabel
+    Left = 0
+    Height = 132
+    Top = 8
+    Width = 532
+    Caption = 'В разработке было всего 2 человека)'#13#10'Tiberium - Даниил Яранцев.'#13#10'Dahack - Даниил Коломиец.'#13#10'Разрабатывали на c++ вместе с pascal.'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -29
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Button1: TButton
+    Left = 420
+    Height = 40
+    Top = 144
+    Width = 112
+    Caption = 'OK)'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Name = 'Cambria'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = Button1Click
+    ParentFont = False
+    TabOrder = 0
+  end
+end
