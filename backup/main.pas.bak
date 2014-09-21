@@ -21,6 +21,7 @@ type
     Image2: TImage;
     Image3: TImage;
     procedure Button3Click(Sender: TObject);
+    procedure Button4Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
   private
     { private declarations }
@@ -45,6 +46,11 @@ end;
 procedure TForm1.Button3Click(Sender: TObject);
 begin
   Form2.Visible:=true;
+end;
+
+procedure TForm1.Button4Click(Sender: TObject);
+begin
+  Exit;
 end;
 
 end.

@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 308
+  Left = 239
   Height = 523
-  Top = 256
+  Top = 69
   Width = 463
   Caption = 'Главное меню'
   ClientHeight = 523
@@ -67,6 +67,7 @@ object Form1: TForm1
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     Font.Style = [fsBold]
+    OnClick = Button4Click
     ParentFont = False
     TabOrder = 3
   end
