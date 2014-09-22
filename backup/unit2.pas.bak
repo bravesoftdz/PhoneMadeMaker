@@ -45,12 +45,12 @@ var
   persname:string;
   company:string;
 begin
-  If FileExists('cfg.cfg') then //Если есть файл параметров
+  If FileExists('cfg.cfg') then //Если есть файл с параметрами
      begin
        AssignFile(filepers,'cfg.cfg');//То ассоциировать файловую переменную с файлом
        Append(filepers);//Разрешить изменение файла
      end
-  else//Если нету файла параметров
+  else//Если нету файла с параметрами
      begin
        AssignFile(filepers,'cfg.cfg');//Ассоциировать файловую перемнную с файлом
        Rewrite(filepers);//Создать файл

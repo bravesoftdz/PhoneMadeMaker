@@ -57,7 +57,7 @@ object Form3: TForm3
   object Button1: TButton
     Left = 488
     Height = 25
-    Top = 120
+    Top = 119
     Width = 103
     Caption = 'Сохранить'
     Font.CharSet = RUSSIAN_CHARSET
@@ -69,5 +69,21 @@ object Form3: TForm3
     OnClick = Button1Click
     ParentFont = False
     TabOrder = 2
+  end
+  object Button2: TButton
+    Left = 392
+    Height = 25
+    Top = 119
+    Width = 91
+    Caption = 'Отмена'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -15
+    Font.Name = 'Arial Black'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = Button2Click
+    ParentFont = False
+    TabOrder = 3
   end
 end

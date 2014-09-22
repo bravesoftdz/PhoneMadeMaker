@@ -1,11 +1,11 @@
 object Form1: TForm1
   Left = 424
-  Height = 570
-  Top = 79
+  Height = 617
+  Top = 81
   Width = 463
   BorderStyle = bsDialog
   Caption = 'Главное меню'
-  ClientHeight = 570
+  ClientHeight = 617
   ClientWidth = 463
   Color = clWhite
   OnCreate = FormCreate
@@ -60,7 +60,7 @@ object Form1: TForm1
   object Button4: TButton
     Left = 144
     Height = 32
-    Top = 532
+    Top = 528
     Width = 176
     Caption = 'Выход'
     Font.CharSet = RUSSIAN_CHARSET
@@ -23891,6 +23891,36 @@ object Form1: TForm1
     ParentFont = False
     OnClick = Label5Click
     OnMouseEnter = Label5MouseEnter
+  end
+  object Label6: TLabel
+    Left = 0
+    Height = 18
+    Top = 568
+    Width = 109
+    Caption = 'Здравствуйте, '
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -13
+    Font.Name = 'Arial Black'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label7: TLabel
+    Left = 0
+    Height = 18
+    Top = 592
+    Width = 120
+    Caption = 'Ваша компания '
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -13
+    Font.Name = 'Arial Black'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
   end
   object OpenDialog1: TOpenDialog
     DefaultExt = '.wav'

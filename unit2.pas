@@ -13,11 +13,13 @@ type
 
   TForm3 = class(TForm)
     Button1: TButton;
+    Button2: TButton;
     Edit1: TEdit;
     Edit2: TEdit;
     Label1: TLabel;
     Label2: TLabel;
     procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
   private
     { private declarations }
@@ -62,6 +64,12 @@ begin
   writeln(filepers, persname);//Написать в файл строку с именем персонажа
   writeln(filepers, company);//Написать в файл строку с названием компании
   CloseFile(filepers);//Закрыть файл для записи и чтения(Хз, без этого не работает)
+end;
+
+procedure TForm3.Button2Click(Sender: TObject);
+begin
+  Form3.Visible:=false;
+  Form1.Visible:=true;
 end;
 
 end.

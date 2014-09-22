@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls,
-  ExtCtrls,MMSystem,dynlibs;
+  ExtCtrls, ComCtrls,MMSystem,dynlibs;
 
 type
 
@@ -91,7 +91,7 @@ begin
    begin
    filemusicstring:=OpenDialog1.Filename;//Имя файла музыки = Имя файла из диалога открытия файла
    filemusic:=PChar(filemusicstring);//Херня какая то
-   sndPlaySound(pchar(UTF8ToSys(filemusic)), snd_Async or snd_NoDefault);//Белиберда какая - то
+   sndPlaySound(pchar(UTF8ToSys(filemusic)), snd_Async or snd_NoDefault);//Белиберда какая - то   //Согласен, хуета полная. Блять! Описание даже не сделали гондоны! СУКААААААААААААААААААААААААААААААААААААААААААААААААААААААА!!!!
    end;
 
 end;
