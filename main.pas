@@ -18,6 +18,7 @@ type
     Button3: TButton;
     Button4: TButton;
     Button5: TButton;
+    Button6: TButton;
     Image1: TImage;
     Image2: TImage;
     Image3: TImage;
@@ -33,6 +34,7 @@ type
     procedure Button3Click(Sender: TObject);
     procedure Button4Click(Sender: TObject);
     procedure Button5Click(Sender: TObject);
+    procedure Button6Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure Label5Click(Sender: TObject);
     procedure Label5MouseEnter(Sender: TObject);
@@ -93,6 +95,19 @@ begin
    sndPlaySound(pchar(UTF8ToSys(filemusic)), snd_Async or snd_NoDefault);//Белиберда какая - то   //Согласен, хуета полная. Блять! Описание даже не сделали гондоны! СУКААААААААААААААААААААААААААААААААААААААААААААААААААААААА!!!!
    end;
 
+end;
+
+procedure TForm1.Button6Click(Sender: TObject);
+var
+  chel:string;
+  companys:string;
+begin
+   Append(filepers);
+   read(filepers, chel);
+   Label6.Caption:=chel;
+   read(filepers,companys);
+   Label7.Caption:=companys;
+   CloseFile(filepers);
 end;
 
 end.
