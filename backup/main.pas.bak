@@ -18,7 +18,6 @@ type
     Button3: TButton;
     Button4: TButton;
     Button5: TButton;
-    Button6: TButton;
     Image1: TImage;
     Image2: TImage;
     Image3: TImage;
@@ -34,7 +33,6 @@ type
     procedure Button3Click(Sender: TObject);
     procedure Button4Click(Sender: TObject);
     procedure Button5Click(Sender: TObject);
-    procedure Button6Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure Label5Click(Sender: TObject);
     procedure Label5MouseEnter(Sender: TObject);
@@ -63,15 +61,15 @@ begin
   If FileExists('cfg.cfg') then //Если есть файл с параметрами
      begin
        AssignFile(filepers,'cfg.cfg');
-       Reset(filepers);
-       While not (Eof(filepers)) do
+       Reset(filepers);//Разрешить файл для чтения(зачем разрешать? Россия же :)
+       While not (Eof(filepers)) do//Пока не достигнут конец файла
        begin
-                                   Readln(filepers,test);
-                                   Readln(filepers,test2);
-                                    Label6.Caption:='Здравствуйте, ' +test;
-                                    Label7.Caption:='Ваша компания ' + test2;
+          Readln(filepers,test);//Прочитать строку с именем
+          Readln(filepers,test2);//Прочитать строку с компанией
+          Label6.Caption:='Здравствуйте, ' +test;
+          Label7.Caption:='Ваша компания ' + test2;
        end;
-                               CloseFile(filepers);
+                               CloseFile(filepers);//Закрыть файл для чтения
        end;
 end;
 
