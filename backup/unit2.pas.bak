@@ -31,7 +31,7 @@ var
   Form3: TForm3;
 
 implementation
-uses Main,Unit1;
+uses Main,Unit1,Unit3;
 
 {$R *.lfm}
 

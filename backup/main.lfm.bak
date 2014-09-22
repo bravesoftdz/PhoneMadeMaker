@@ -1,11 +1,11 @@
 object Form1: TForm1
   Left = 332
-  Height = 570
+  Height = 568
   Top = 93
   Width = 466
   BorderStyle = bsDialog
   Caption = 'Главное меню'
-  ClientHeight = 570
+  ClientHeight = 568
   ClientWidth = 466
   Color = clWhite
   OnCreate = FormCreate
@@ -17,7 +17,7 @@ object Form1: TForm1
     Width = 176
     Caption = 'Играть'
     Font.CharSet = RUSSIAN_CHARSET
-    Font.Height = -27
+    Font.Height = -19
     Font.Name = 'Arial'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -29,11 +29,11 @@ object Form1: TForm1
   object Button2: TButton
     Left = 144
     Height = 32
-    Top = 376
+    Top = 368
     Width = 176
     Caption = 'Сохранить'
     Font.CharSet = RUSSIAN_CHARSET
-    Font.Height = -27
+    Font.Height = -19
     Font.Name = 'Arial'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -44,11 +44,11 @@ object Form1: TForm1
   object Button3: TButton
     Left = 144
     Height = 32
-    Top = 424
+    Top = 408
     Width = 176
     Caption = 'Авторы'
     Font.CharSet = RUSSIAN_CHARSET
-    Font.Height = -27
+    Font.Height = -19
     Font.Name = 'Arial'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -60,11 +60,11 @@ object Form1: TForm1
   object Button4: TButton
     Left = 144
     Height = 32
-    Top = 532
+    Top = 488
     Width = 176
     Caption = 'Выход'
     Font.CharSet = RUSSIAN_CHARSET
-    Font.Height = -27
+    Font.Height = -19
     Font.Name = 'Arial'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -23861,14 +23861,14 @@ object Form1: TForm1
     ParentFont = False
   end
   object Button5: TButton
-    Left = 96
+    Left = 144
     Height = 32
-    Top = 476
-    Width = 272
-    Caption = 'Открыть свою музыку(только .wav)'
-    Font.CharSet = ANSI_CHARSET
-    Font.Height = -13
-    Font.Name = 'Arial Black'
+    Top = 448
+    Width = 176
+    Caption = 'Открыть свой трек'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -15
+    Font.Name = 'Arial'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     Font.Style = [fsBold]
@@ -23877,9 +23877,9 @@ object Form1: TForm1
     TabOrder = 4
   end
   object Label5: TLabel
-    Left = 368
+    Left = 320
     Height = 33
-    Top = 476
+    Top = 447
     Width = 16
     Caption = '?'
     Font.CharSet = RUSSIAN_CHARSET
@@ -23893,25 +23893,74 @@ object Form1: TForm1
     OnMouseEnter = Label5MouseEnter
   end
   object Label6: TLabel
-    Left = 144
-    Height = 15
-    Top = 408
-    Width = 79
+    Left = 0
+    Height = 16
+    Top = 552
+    Width = 90
     Caption = 'Здравствуйте, '
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
     ParentColor = False
+    ParentFont = False
   end
   object Label7: TLabel
-    Left = 144
-    Height = 15
-    Top = 360
-    Width = 91
+    Left = 0
+    Height = 16
+    Top = 528
+    Width = 99
     Caption = 'Ваша компания '
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
     ParentColor = False
+    ParentFont = False
+  end
+  object Label8: TLabel
+    Left = 104
+    Height = 18
+    Top = 525
+    Width = 99
+    Caption = 'Гружу инфу =)'
+    Color = clWhite
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+  end
+  object Label9: TLabel
+    Left = 96
+    Height = 18
+    Top = 550
+    Width = 99
+    Caption = 'Гружу инфу =)'
+    Color = clWhite
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
   end
   object OpenDialog1: TOpenDialog
     DefaultExt = '.wav'
     FileName = '*.wav'
-    left = 24
-    top = 440
+    left = 400
+    top = 352
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    left = 360
+    top = 448
   end
 end

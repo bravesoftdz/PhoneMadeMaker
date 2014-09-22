@@ -1,7 +1,7 @@
 object Form3: TForm3
-  Left = 26
+  Left = 471
   Height = 145
-  Top = 580
+  Top = 340
   Width = 591
   BorderStyle = bsDialog
   Caption = 'Настройки компании'
@@ -15,6 +15,7 @@ object Form3: TForm3
     Height = 23
     Top = 25
     Width = 272
+    MaxLength = 16
     TabOrder = 0
   end
   object Label1: TLabel
@@ -37,6 +38,7 @@ object Form3: TForm3
     Height = 23
     Top = 73
     Width = 272
+    MaxLength = 16
     TabOrder = 1
   end
   object Label2: TLabel

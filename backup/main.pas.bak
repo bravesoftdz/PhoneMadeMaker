@@ -28,7 +28,10 @@ type
     Label5: TLabel;
     Label6: TLabel;
     Label7: TLabel;
+    Label8: TLabel;
+    Label9: TLabel;
     OpenDialog1: TOpenDialog;
+    Timer1: TTimer;
     procedure Button1Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
     procedure Button4Click(Sender: TObject);
@@ -36,6 +39,7 @@ type
     procedure FormCreate(Sender: TObject);
     procedure Label5Click(Sender: TObject);
     procedure Label5MouseEnter(Sender: TObject);
+    procedure Timer1Timer(Sender: TObject);
   private
     { private declarations }
   public
@@ -55,7 +59,22 @@ implementation
 { TForm1 }
 
 procedure TForm1.FormCreate(Sender: TObject);
-var test:string;
+begin
+
+end;
+
+procedure TForm1.Label5Click(Sender: TObject);
+begin
+ShowMessage('Вы можете загружать музыку только в формате .wav!');
+end;
+
+procedure TForm1.Label5MouseEnter(Sender: TObject);
+begin
+
+end;
+
+procedure TForm1.Timer1Timer(Sender: TObject);
+  var test:string;
   test2:string;
 begin
   If FileExists('cfg.cfg') then //Если есть файл с параметрами
@@ -67,20 +86,12 @@ begin
           Readln(filepers,test);//Прочитать строку с именем
           Readln(filepers,test2);//Прочитать строку с компанией
           Label6.Caption:='Здравствуйте, ' +test;
-          Label7.Caption:='Ваша компания ' + test2;
+          Label7.Caption:='Ваша компания : ' + test2;
+          Label8.Visible:=false;
+          Label9.Visible:=false;
        end;
                                CloseFile(filepers);//Закрыть файл для чтения
        end;
-end;
-
-procedure TForm1.Label5Click(Sender: TObject);
-begin
-ShowMessage('Вы можете загружать музыку только в формате .wav!');
-end;
-
-procedure TForm1.Label5MouseEnter(Sender: TObject);
-begin
-
 end;
 
 procedure TForm1.Button3Click(Sender: TObject);
@@ -111,4 +122,5 @@ begin
 end;
 
 end.
-
+//**********************************************\\
+////MADE BY RUSSIAN HACKERS YOY NIGGA BITCH БЛЯ\\\\

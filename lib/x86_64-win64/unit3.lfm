@@ -1,8 +1,9 @@
 object Form4: TForm4
-  Left = -67
+  Left = 317
   Height = 441
-  Top = 183
+  Top = 134
   Width = 704
+  BorderStyle = bsDialog
   Caption = 'Офис'
   ClientHeight = 441
   ClientWidth = 704
@@ -202,7 +203,7 @@ object Form4: TForm4
       Left = 0
       Height = 22
       Top = 8
-      Width = 203
+      Width = 184
       Caption = 'Название телефона :'
       Font.CharSet = RUSSIAN_CHARSET
       Font.Height = -15
@@ -217,7 +218,7 @@ object Form4: TForm4
       Left = 0
       Height = 22
       Top = 40
-      Width = 269
+      Width = 243
       Caption = 'Размер экрана (В дюймах) :'
       Font.CharSet = RUSSIAN_CHARSET
       Font.Height = -15
@@ -232,7 +233,7 @@ object Form4: TForm4
       Left = 0
       Height = 22
       Top = 72
-      Width = 146
+      Width = 132
       Caption = 'Тип телефона :'
       Font.CharSet = RUSSIAN_CHARSET
       Font.Height = -15
@@ -247,7 +248,7 @@ object Form4: TForm4
       Left = 0
       Height = 22
       Top = 104
-      Width = 316
+      Width = 286
       Caption = 'Установленная OC на телефоне :'
       Font.CharSet = RUSSIAN_CHARSET
       Font.Height = -15
@@ -340,7 +341,7 @@ object Form4: TForm4
       Left = 0
       Height = 22
       Top = 136
-      Width = 177
+      Width = 160
       Caption = 'Качество камеры :'
       Font.CharSet = RUSSIAN_CHARSET
       Font.Height = -15
@@ -355,7 +356,7 @@ object Form4: TForm4
       Left = 0
       Height = 22
       Top = 168
-      Width = 171
+      Width = 154
       Caption = 'Количество ядер :'
       Font.CharSet = RUSSIAN_CHARSET
       Font.Height = -15
@@ -408,7 +409,7 @@ object Form4: TForm4
       Left = 0
       Height = 22
       Top = 200
-      Width = 206
+      Width = 187
       Caption = 'Поддержка графики :'
       Font.CharSet = RUSSIAN_CHARSET
       Font.Height = -15
