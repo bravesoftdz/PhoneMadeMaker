@@ -61,7 +61,7 @@ begin
   Append(filepers);//Опять разрешить изменение файла (на всякий случай :)
   writeln(filepers, persname);//Написать в файл строку с именем персонажа
   writeln(filepers, company);//Написать в файл строку с названием компании
-  CloseFile(filepers);
+  CloseFile(filepers);//Закрыть файл для записи и чтения(Хз, без этого не работает)
 end;
 
 end.
