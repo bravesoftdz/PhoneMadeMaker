@@ -56,6 +56,7 @@ implementation
 
 procedure TForm1.FormCreate(Sender: TObject);
 begin
+
 end;
 
 procedure TForm1.Label5Click(Sender: TObject);

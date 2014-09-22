@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 52
+  Left = 773
   Height = 570
-  Top = 106
+  Top = 97
   Width = 466
   BorderStyle = bsDialog
   Caption = 'Главное меню'
