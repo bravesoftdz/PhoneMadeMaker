@@ -1,7 +1,7 @@
 object Form2: TForm2
-  Left = 416
+  Left = 200
   Height = 224
-  Top = 324
+  Top = 479
   Width = 311
   BorderStyle = bsDialog
   Caption = 'Информация'
@@ -11,7 +11,7 @@ object Form2: TForm2
   OnCreate = FormCreate
   LCLVersion = '1.2.4.0'
   object Label1: TLabel
-    Left = 0
+    Left = 1
     Height = 216
     Top = 8
     Width = 311

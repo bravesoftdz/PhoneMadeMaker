@@ -25,12 +25,15 @@ type
     Label2: TLabel;
     Label3: TLabel;
     Label4: TLabel;
+    Label5: TLabel;
     OpenDialog1: TOpenDialog;
     procedure Button1Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
     procedure Button4Click(Sender: TObject);
     procedure Button5Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
+    procedure Label5Click(Sender: TObject);
+    procedure Label5MouseEnter(Sender: TObject);
   private
     { private declarations }
   public
@@ -43,13 +46,23 @@ var
   filemusic:PChar;
 
 implementation
-  uses unit1;
+  uses unit1,unit2;
 {$R *.lfm}
 
 { TForm1 }
 
 procedure TForm1.FormCreate(Sender: TObject);
 begin
+end;
+
+procedure TForm1.Label5Click(Sender: TObject);
+begin
+ShowMessage('Вы можете загружать музыку только в формате .wav!');
+end;
+
+procedure TForm1.Label5MouseEnter(Sender: TObject);
+begin
+
 end;
 
 procedure TForm1.Button3Click(Sender: TObject);
@@ -59,7 +72,8 @@ end;
 
 procedure TForm1.Button1Click(Sender: TObject);
 begin
-
+  Form1.Visible:=false;
+    Form3.Visible:=true;
 end;
 
 procedure TForm1.Button4Click(Sender: TObject);
