@@ -1,11 +1,11 @@
 object Form3: TForm3
-  Left = 322
-  Height = 144
-  Top = 407
+  Left = 26
+  Height = 145
+  Top = 580
   Width = 591
   BorderStyle = bsDialog
   Caption = 'Настройки компании'
-  ClientHeight = 144
+  ClientHeight = 145
   ClientWidth = 591
   Color = clWhite
   OnCreate = FormCreate
@@ -55,11 +55,11 @@ object Form3: TForm3
     ParentFont = False
   end
   object Button1: TButton
-    Left = 488
+    Left = 464
     Height = 25
-    Top = 120
-    Width = 103
-    Caption = 'Сохранить'
+    Top = 119
+    Width = 127
+    Caption = 'Продолжить'
     Font.CharSet = RUSSIAN_CHARSET
     Font.Height = -16
     Font.Name = 'Arial Black'
@@ -69,5 +69,21 @@ object Form3: TForm3
     OnClick = Button1Click
     ParentFont = False
     TabOrder = 2
+  end
+  object Button2: TButton
+    Left = 368
+    Height = 25
+    Top = 119
+    Width = 91
+    Caption = 'Отмена'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -15
+    Font.Name = 'Arial Black'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = Button2Click
+    ParentFont = False
+    TabOrder = 3
   end
 end

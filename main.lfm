@@ -1,12 +1,12 @@
 object Form1: TForm1
-  Left = 424
+  Left = 52
   Height = 570
-  Top = 79
-  Width = 463
+  Top = 106
+  Width = 466
   BorderStyle = bsDialog
   Caption = 'Главное меню'
   ClientHeight = 570
-  ClientWidth = 463
+  ClientWidth = 466
   Color = clWhite
   OnCreate = FormCreate
   LCLVersion = '1.2.4.0'
@@ -23901,7 +23901,7 @@ object Form1: TForm1
     ParentColor = False
   end
   object Label7: TLabel
-    Left = 357
+    Left = 344
     Height = 15
     Top = 384
     Width = 91

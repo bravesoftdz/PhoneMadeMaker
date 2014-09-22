@@ -31,7 +31,7 @@ var
   Form3: TForm3;
 
 implementation
-uses Main,Unit1;
+uses Main,Unit1,Unit3;
 
 {$R *.lfm}
 
@@ -47,6 +47,8 @@ var
   persname:string;
   company:string;
 begin
+  Form3.Visible:=false;
+  Form4.Visible:=true;
   If FileExists('cfg.cfg') then //Если есть файл с параметрами
      begin
        AssignFile(filepers,'cfg.cfg');//То ассоциировать файловую переменную с файлом

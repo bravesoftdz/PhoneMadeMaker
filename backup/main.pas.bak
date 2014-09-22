@@ -86,7 +86,6 @@ end;
 
 procedure TForm1.Button5Click(Sender: TObject);
 begin
-   OpenDialog1.Execute;//Запустить диалог открытия файлов
    If OpenDialog1.Execute then//Если диалог открытия файлов открыт
    begin
    filemusicstring:=OpenDialog1.Filename;//Имя файла музыки = Имя файла из диалога открытия файла
