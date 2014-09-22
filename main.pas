@@ -18,6 +18,7 @@ type
     Button3: TButton;
     Button4: TButton;
     Button5: TButton;
+    Button6: TButton;
     Image1: TImage;
     Image2: TImage;
     Image3: TImage;
@@ -55,8 +56,22 @@ implementation
 { TForm1 }
 
 procedure TForm1.FormCreate(Sender: TObject);
+var test:string;
+  test2:string;
 begin
-
+  If FileExists('cfg.cfg') then //Если есть файл с параметрами
+     begin
+       AssignFile(filepers,'cfg.cfg');
+       Reset(filepers);
+       While not (Eof(filepers)) do
+       begin
+                                   Readln(filepers,test);
+                                   Readln(filepers,test2);
+                                    Label6.Caption:='Здравствуйте, ' +test;
+                                    Label7.Caption:='Ваша компания ' + test2;
+       end;
+                               CloseFile(filepers);
+       end;
 end;
 
 procedure TForm1.Label5Click(Sender: TObject);

@@ -1,7 +1,7 @@
 object Form4: TForm4
-  Left = 225
+  Left = -67
   Height = 441
-  Top = 125
+  Top = 183
   Width = 704
   Caption = 'Офис'
   ClientHeight = 441
@@ -202,7 +202,7 @@ object Form4: TForm4
       Left = 0
       Height = 22
       Top = 8
-      Width = 184
+      Width = 203
       Caption = 'Название телефона :'
       Font.CharSet = RUSSIAN_CHARSET
       Font.Height = -15
@@ -217,7 +217,7 @@ object Form4: TForm4
       Left = 0
       Height = 22
       Top = 40
-      Width = 243
+      Width = 269
       Caption = 'Размер экрана (В дюймах) :'
       Font.CharSet = RUSSIAN_CHARSET
       Font.Height = -15
@@ -232,7 +232,7 @@ object Form4: TForm4
       Left = 0
       Height = 22
       Top = 72
-      Width = 132
+      Width = 146
       Caption = 'Тип телефона :'
       Font.CharSet = RUSSIAN_CHARSET
       Font.Height = -15
@@ -247,7 +247,7 @@ object Form4: TForm4
       Left = 0
       Height = 22
       Top = 104
-      Width = 286
+      Width = 316
       Caption = 'Установленная OC на телефоне :'
       Font.CharSet = RUSSIAN_CHARSET
       Font.Height = -15
@@ -272,7 +272,7 @@ object Form4: TForm4
       TabOrder = 0
     end
     object size: TComboBox
-      Left = 256
+      Left = 264
       Height = 23
       Top = 40
       Width = 136
@@ -294,7 +294,7 @@ object Form4: TForm4
       Text = '3.0'
     end
     object typephone: TComboBox
-      Left = 144
+      Left = 160
       Height = 23
       Top = 72
       Width = 136
@@ -312,7 +312,7 @@ object Form4: TForm4
       Text = 'Сенсорный'
     end
     object ocphone: TComboBox
-      Left = 296
+      Left = 312
       Height = 23
       Top = 104
       Width = 112
@@ -323,8 +323,13 @@ object Form4: TForm4
       Items.Strings = (
         'Java'
         'Android'
-        'Windows Phone'
-        'Ios 7'
+        'Windows Phone 7'
+        'Windows Phone 8.1'
+        'BlackBerry'
+        'Symbian'
+        'IOs 7'
+        'IOs 8'
+        'Win CE'
       )
       ParentBidiMode = False
       Style = csDropDownList
@@ -335,7 +340,7 @@ object Form4: TForm4
       Left = 0
       Height = 22
       Top = 136
-      Width = 160
+      Width = 177
       Caption = 'Качество камеры :'
       Font.CharSet = RUSSIAN_CHARSET
       Font.Height = -15
@@ -350,7 +355,7 @@ object Form4: TForm4
       Left = 0
       Height = 22
       Top = 168
-      Width = 154
+      Width = 171
       Caption = 'Количество ядер :'
       Font.CharSet = RUSSIAN_CHARSET
       Font.Height = -15
@@ -362,7 +367,7 @@ object Form4: TForm4
       ParentFont = False
     end
     object yadro: TComboBox
-      Left = 168
+      Left = 180
       Height = 23
       Top = 168
       Width = 136
@@ -403,7 +408,7 @@ object Form4: TForm4
       Left = 0
       Height = 22
       Top = 200
-      Width = 187
+      Width = 206
       Caption = 'Поддержка графики :'
       Font.CharSet = RUSSIAN_CHARSET
       Font.Height = -15
@@ -415,7 +420,7 @@ object Form4: TForm4
       ParentFont = False
     end
     object graphics: TComboBox
-      Left = 200
+      Left = 216
       Height = 23
       Top = 200
       Width = 136
@@ -434,15 +439,16 @@ object Form4: TForm4
       Text = '2 D'
     end
     object camera: TComboBox
-      Left = 176
+      Left = 185
       Height = 23
       Top = 136
       Width = 136
       CharCase = ecUppercase
       Color = clHighlightText
       ItemHeight = 15
-      ItemIndex = 0
+      ItemIndex = 1
       Items.Strings = (
+        '1.9 MP'
         '2 MP'
         '3 MP'
         '4 MP'

@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 773
+  Left = 332
   Height = 570
-  Top = 97
+  Top = 93
   Width = 466
   BorderStyle = bsDialog
   Caption = 'Главное меню'
@@ -23893,20 +23893,28 @@ object Form1: TForm1
     OnMouseEnter = Label5MouseEnter
   end
   object Label6: TLabel
-    Left = 344
+    Left = 144
     Height = 15
-    Top = 336
+    Top = 408
     Width = 79
     Caption = 'Здравствуйте, '
     ParentColor = False
   end
   object Label7: TLabel
-    Left = 344
+    Left = 144
     Height = 15
-    Top = 384
+    Top = 360
     Width = 91
     Caption = 'Ваша компания '
     ParentColor = False
+  end
+  object Button6: TButton
+    Left = 44
+    Height = 49
+    Top = 363
+    Width = 46
+    Caption = 'Button6'
+    TabOrder = 5
   end
   object OpenDialog1: TOpenDialog
     DefaultExt = '.wav'
