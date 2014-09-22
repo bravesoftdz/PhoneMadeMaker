@@ -1,8 +1,9 @@
 object Form3: TForm3
-  Left = 286
+  Left = 322
   Height = 144
-  Top = 499
+  Top = 407
   Width = 591
+  BorderStyle = bsDialog
   Caption = 'Настройки компании'
   ClientHeight = 144
   ClientWidth = 591
@@ -12,7 +13,7 @@ object Form3: TForm3
   object Edit1: TEdit
     Left = 192
     Height = 23
-    Top = 24
+    Top = 25
     Width = 272
     TabOrder = 0
   end
@@ -65,6 +66,7 @@ object Form3: TForm3
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     Font.Style = [fsBold]
+    OnClick = Button1Click
     ParentFont = False
     TabOrder = 2
   end

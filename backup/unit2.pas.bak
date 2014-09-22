@@ -17,6 +17,7 @@ type
     Edit2: TEdit;
     Label1: TLabel;
     Label2: TLabel;
+    procedure Button1Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
   private
     { private declarations }
@@ -28,6 +29,7 @@ var
   Form3: TForm3;
 
 implementation
+uses Main,Unit1;
 
 {$R *.lfm}
 
@@ -36,6 +38,30 @@ implementation
 procedure TForm3.FormCreate(Sender: TObject);
 begin
 
+end;
+
+procedure TForm3.Button1Click(Sender: TObject);
+var
+  persname:string;
+  company:string;
+begin
+  If FileExists('cfg.cfg') then //Если есть файл параметров
+     begin
+       AssignFile(filepers,'cfg.cfg');//То ассоциировать файловую переменную с файлом
+       Append(filepers);//Разрешить изменение файла
+     end
+  else//Если нету файла параметров
+     begin
+       AssignFile(filepers,'cfg.cfg');//Ассоциировать файловую перемнную с файлом
+       Rewrite(filepers);//Создать файл
+       Append(filepers);//Разрешить изменение файла
+     end;
+  persname:=Edit1.Text;//Имя персонажа из 1 поля ввода в переменную persname
+  company:=Edit2.Text;//Имя компании из 2 поля ввода в переменную company
+  Append(filepers);//Опять разрешить изменение файла (на всякий случай :)
+  writeln(filepers, persname);//Написать в файл строку с именем персонажа
+  writeln(filepers, company);//Написать в файл строку с названием компании
+  CloseFile(filepers);
 end;
 
 end.

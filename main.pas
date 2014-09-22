@@ -26,6 +26,8 @@ type
     Label3: TLabel;
     Label4: TLabel;
     Label5: TLabel;
+    Label6: TLabel;
+    Label7: TLabel;
     OpenDialog1: TOpenDialog;
     procedure Button1Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
@@ -44,6 +46,7 @@ var
   Form1: TForm1;
   filemusicstring:string;
   filemusic:PChar;
+  filepers:textfile;
 
 implementation
   uses unit1,unit2;
