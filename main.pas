@@ -86,12 +86,12 @@ end;
 
 procedure TForm1.Button5Click(Sender: TObject);
 begin
-   OpenDialog1.Execute;
-   If OpenDialog1.Execute then
+   OpenDialog1.Execute;//Запустить диалог открытия файлов
+   If OpenDialog1.Execute then//Если диалог открытия файлов открыт
    begin
-   filemusicstring:=OpenDialog1.Filename;
-   filemusic:=PChar(filemusicstring);
-   sndPlaySound(pchar(UTF8ToSys(filemusic)), snd_Async or snd_NoDefault);
+   filemusicstring:=OpenDialog1.Filename;//Имя файла музыки = Имя файла из диалога открытия файла
+   filemusic:=PChar(filemusicstring);//Херня какая то
+   sndPlaySound(pchar(UTF8ToSys(filemusic)), snd_Async or snd_NoDefault);//Белиберда какая - то
    end;
 
 end;

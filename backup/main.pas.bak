@@ -27,6 +27,7 @@ type
     Label4: TLabel;
     Label5: TLabel;
     Label6: TLabel;
+    Label7: TLabel;
     OpenDialog1: TOpenDialog;
     procedure Button1Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
@@ -85,12 +86,12 @@ end;
 
 procedure TForm1.Button5Click(Sender: TObject);
 begin
-   OpenDialog1.Execute;
-   If OpenDialog1.Execute then
+   OpenDialog1.Execute;//Запустить диалог открытия файлов
+   If OpenDialog1.Execute then//Если диалог открытия файлов открыт
    begin
-   filemusicstring:=OpenDialog1.Filename;
-   filemusic:=PChar(filemusicstring);
-   sndPlaySound(pchar(UTF8ToSys(filemusic)), snd_Async or snd_NoDefault);
+   filemusicstring:=OpenDialog1.Filename;//Имя файла музыки = Имя файла из диалога открытия файла
+   filemusic:=PChar(filemusicstring);//
+   sndPlaySound(pchar(UTF8ToSys(filemusic)), snd_Async or snd_NoDefault);//Белиберда какая - то
    end;
 
 end;
