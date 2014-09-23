@@ -15,6 +15,7 @@ type
   TForm4 = class(TForm)
     Button1: TButton;
     size: TComboBox;
+    Timer1: TTimer;
     typephone: TComboBox;
     ocphone: TComboBox;
     yadro: TComboBox;
@@ -36,8 +37,8 @@ type
     Label18: TLabel;
     balance: TLabel;
     Label2: TLabel;
-    persname: TLabel;
-    company: TLabel;
+    label229: TLabel;
+    label228: TLabel;
     telefon: TLabel;
     status: TLabel;
     cena: TLabel;
@@ -259,13 +260,13 @@ begin
     cenaphone:=cenaphone+40000;
   end;
 
-  ShowMessage(IntToStr(cenaphone));
+    cena.caption:=(IntToStr(cenaphone));
   cenaphone:=0;
 end;
 
 procedure TForm4.cameraChange(Sender: TObject);
 begin
-  cena.caption:=IntToStr(cenaphone);
+
 end;
 
 procedure TForm4.FormCreate(Sender: TObject);
@@ -274,7 +275,7 @@ end;
 
 procedure TForm4.graphicsChange(Sender: TObject);
 begin
-  cena.caption:=IntToStr(cenaphone);
+
 end;
 
 procedure TForm4.Label10Click(Sender: TObject);
@@ -284,15 +285,16 @@ end;
 
 procedure TForm4.ocphoneChange(Sender: TObject);
 begin
- cena.caption:=IntToStr(cenaphone);
+
 end;
 
 procedure TForm4.sizeChange(Sender: TObject);
 begin
- cena.caption:=IntToStr(cenaphone);
+
 end;
 
 procedure TForm4.Timer1Timer(Sender: TObject);
+
 begin
     If size.ItemIndex=0 then
   begin
@@ -474,12 +476,12 @@ end;
 
 procedure TForm4.typephoneChange(Sender: TObject);
 begin
- cena.caption:=IntToStr(cenaphone);
+
 end;
 
 procedure TForm4.yadroChange(Sender: TObject);
 begin
-  cena.caption:=IntToStr(cenaphone);
+
 end;
 
 
