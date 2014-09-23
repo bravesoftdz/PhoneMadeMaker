@@ -15,7 +15,6 @@ type
   TForm4 = class(TForm)
     Button1: TButton;
     size: TComboBox;
-    Timer1: TTimer;
     typephone: TComboBox;
     ocphone: TComboBox;
     yadro: TComboBox;

@@ -194,16 +194,16 @@ object Form4: TForm4
     Left = 8
     Height = 256
     Top = 176
-    Width = 416
+    Width = 440
     Caption = 'Разработка'
     ClientHeight = 238
-    ClientWidth = 412
+    ClientWidth = 436
     TabOrder = 2
     object Label11: TLabel
       Left = 0
       Height = 22
       Top = 8
-      Width = 203
+      Width = 184
       Caption = 'Название телефона :'
       Font.CharSet = RUSSIAN_CHARSET
       Font.Height = -15
@@ -218,7 +218,7 @@ object Form4: TForm4
       Left = 0
       Height = 22
       Top = 40
-      Width = 269
+      Width = 243
       Caption = 'Размер экрана (В дюймах) :'
       Font.CharSet = RUSSIAN_CHARSET
       Font.Height = -15
@@ -233,7 +233,7 @@ object Form4: TForm4
       Left = 0
       Height = 22
       Top = 72
-      Width = 146
+      Width = 132
       Caption = 'Тип телефона :'
       Font.CharSet = RUSSIAN_CHARSET
       Font.Height = -15
@@ -248,7 +248,7 @@ object Form4: TForm4
       Left = 0
       Height = 22
       Top = 104
-      Width = 316
+      Width = 286
       Caption = 'Установленная OC на телефоне :'
       Font.CharSet = RUSSIAN_CHARSET
       Font.Height = -15
@@ -315,10 +315,10 @@ object Form4: TForm4
       Text = 'Сенсорный'
     end
     object ocphone: TComboBox
-      Left = 312
+      Left = 288
       Height = 23
       Top = 104
-      Width = 112
+      Width = 144
       BidiMode = bdRightToLeftNoAlign
       CharCase = ecLowerCase
       ItemHeight = 15
@@ -344,7 +344,7 @@ object Form4: TForm4
       Left = 0
       Height = 22
       Top = 136
-      Width = 177
+      Width = 160
       Caption = 'Качество камеры :'
       Font.CharSet = RUSSIAN_CHARSET
       Font.Height = -15
@@ -359,7 +359,7 @@ object Form4: TForm4
       Left = 0
       Height = 22
       Top = 168
-      Width = 171
+      Width = 154
       Caption = 'Количество ядер :'
       Font.CharSet = RUSSIAN_CHARSET
       Font.Height = -15
@@ -413,7 +413,7 @@ object Form4: TForm4
       Left = 0
       Height = 22
       Top = 200
-      Width = 206
+      Width = 187
       Caption = 'Поддержка графики :'
       Font.CharSet = RUSSIAN_CHARSET
       Font.Height = -15
@@ -425,10 +425,10 @@ object Form4: TForm4
       ParentFont = False
     end
     object graphics: TComboBox
-      Left = 216
+      Left = 200
       Height = 23
       Top = 200
-      Width = 136
+      Width = 208
       CharCase = ecUppercase
       Color = clHighlightText
       ItemHeight = 15
@@ -496,9 +496,9 @@ object Form4: TForm4
     TabOrder = 3
   end
   object Label9: TLabel
-    Left = 424
+    Left = 776
     Height = 15
-    Top = 232
+    Top = 312
     Width = 145
     Caption = 'Общая цена разработки :'
     Font.CharSet = RUSSIAN_CHARSET
@@ -527,9 +527,9 @@ object Form4: TForm4
     OnClick = Label10Click
   end
   object cena: TLabel
-    Left = 576
+    Left = 816
     Height = 15
-    Top = 232
+    Top = 312
     Width = 46
     Caption = '%cena%'
     Font.CharSet = RUSSIAN_CHARSET
@@ -540,11 +540,5 @@ object Form4: TForm4
     Font.Style = [fsBold]
     ParentColor = False
     ParentFont = False
-  end
-  object Timer1: TTimer
-    Interval = 700
-    OnTimer = Timer1Timer
-    left = 376
-    top = 24
   end
 end
