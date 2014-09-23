@@ -1,7 +1,7 @@
 object Form4: TForm4
-  Left = 468
+  Left = 280
   Height = 441
-  Top = 438
+  Top = 113
   Width = 704
   BorderStyle = bsDialog
   Caption = 'Офис'
@@ -144,8 +144,8 @@ object Form4: TForm4
       Left = 176
       Height = 19
       Top = 136
-      Width = 145
-      Caption = 'Нечего не делаем.'
+      Width = 146
+      Caption = 'Ничего не делаем.'
       ParentColor = False
     end
   end
@@ -203,7 +203,7 @@ object Form4: TForm4
       Left = 0
       Height = 22
       Top = 8
-      Width = 184
+      Width = 203
       Caption = 'Название телефона :'
       Font.CharSet = RUSSIAN_CHARSET
       Font.Height = -15
@@ -218,7 +218,7 @@ object Form4: TForm4
       Left = 0
       Height = 22
       Top = 40
-      Width = 243
+      Width = 269
       Caption = 'Размер экрана (В дюймах) :'
       Font.CharSet = RUSSIAN_CHARSET
       Font.Height = -15
@@ -233,7 +233,7 @@ object Form4: TForm4
       Left = 0
       Height = 22
       Top = 72
-      Width = 132
+      Width = 146
       Caption = 'Тип телефона :'
       Font.CharSet = RUSSIAN_CHARSET
       Font.Height = -15
@@ -248,7 +248,7 @@ object Form4: TForm4
       Left = 0
       Height = 22
       Top = 104
-      Width = 286
+      Width = 316
       Caption = 'Установленная OC на телефоне :'
       Font.CharSet = RUSSIAN_CHARSET
       Font.Height = -15
@@ -289,6 +289,7 @@ object Form4: TForm4
         '4.7'
         '5.0'
       )
+      OnChange = sizeChange
       ParentBidiMode = False
       Style = csDropDownList
       TabOrder = 1
@@ -307,6 +308,7 @@ object Form4: TForm4
         'Сенсорный'
         'Кнопочный'
       )
+      OnChange = typephoneChange
       ParentBidiMode = False
       Style = csDropDownList
       TabOrder = 2
@@ -332,6 +334,7 @@ object Form4: TForm4
         'IOs 8'
         'Win CE'
       )
+      OnChange = ocphoneChange
       ParentBidiMode = False
       Style = csDropDownList
       TabOrder = 3
@@ -341,7 +344,7 @@ object Form4: TForm4
       Left = 0
       Height = 22
       Top = 136
-      Width = 160
+      Width = 177
       Caption = 'Качество камеры :'
       Font.CharSet = RUSSIAN_CHARSET
       Font.Height = -15
@@ -356,7 +359,7 @@ object Form4: TForm4
       Left = 0
       Height = 22
       Top = 168
-      Width = 154
+      Width = 171
       Caption = 'Количество ядер :'
       Font.CharSet = RUSSIAN_CHARSET
       Font.Height = -15
@@ -386,6 +389,7 @@ object Form4: TForm4
         '7'
         '8'
       )
+      OnChange = yadroChange
       ParentBidiMode = False
       Style = csDropDownList
       TabOrder = 4
@@ -409,7 +413,7 @@ object Form4: TForm4
       Left = 0
       Height = 22
       Top = 200
-      Width = 187
+      Width = 206
       Caption = 'Поддержка графики :'
       Font.CharSet = RUSSIAN_CHARSET
       Font.Height = -15
@@ -428,19 +432,23 @@ object Form4: TForm4
       CharCase = ecUppercase
       Color = clHighlightText
       ItemHeight = 15
-      ItemIndex = 0
+      ItemIndex = 1
       Items.Strings = (
+        'Никакой графики,только текст'
         '2 D'
+        '2.5 D'
         '3 D'
-        '2/3 D'
+        '4 D'
+        ''
       )
+      OnChange = graphicsChange
       ParentBidiMode = False
       Style = csDropDownList
       TabOrder = 5
       Text = '2 D'
     end
     object camera: TComboBox
-      Left = 185
+      Left = 184
       Height = 23
       Top = 136
       Width = 136
@@ -449,7 +457,7 @@ object Form4: TForm4
       ItemHeight = 15
       ItemIndex = 1
       Items.Strings = (
-        '1.9 MP'
+        'Без камеры'
         '2 MP'
         '3 MP'
         '4 MP'
@@ -464,6 +472,7 @@ object Form4: TForm4
         '12 MP'
         '13 MP'
       )
+      OnChange = cameraChange
       ParentBidiMode = False
       Style = csDropDownList
       TabOrder = 6
@@ -471,9 +480,9 @@ object Form4: TForm4
     end
   end
   object Button1: TButton
-    Left = 584
+    Left = 577
     Height = 34
-    Top = 408
+    Top = 407
     Width = 120
     Caption = 'Разработать'
     Font.CharSet = RUSSIAN_CHARSET
@@ -482,6 +491,7 @@ object Form4: TForm4
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     Font.Style = [fsBold]
+    OnClick = Button1Click
     ParentFont = False
     TabOrder = 3
   end

@@ -1,12 +1,12 @@
 object Form1: TForm1
-  Left = 332
+  Left = 220
   Height = 568
-  Top = 93
-  Width = 466
+  Top = 120
+  Width = 464
   BorderStyle = bsDialog
   Caption = 'Главное меню'
   ClientHeight = 568
-  ClientWidth = 466
+  ClientWidth = 464
   Color = clWhite
   OnCreate = FormCreate
   LCLVersion = '1.2.4.0'
@@ -23959,6 +23959,7 @@ object Form1: TForm1
     top = 352
   end
   object Timer1: TTimer
+    Interval = 2500
     OnTimer = Timer1Timer
     left = 360
     top = 448

@@ -1,11 +1,11 @@
 object Form3: TForm3
-  Left = 471
-  Height = 145
-  Top = 340
+  Left = 606
+  Height = 152
+  Top = 296
   Width = 591
   BorderStyle = bsDialog
   Caption = 'Настройки компании'
-  ClientHeight = 145
+  ClientHeight = 152
   ClientWidth = 591
   Color = clWhite
   OnCreate = FormCreate

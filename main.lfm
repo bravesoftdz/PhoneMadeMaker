@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 334
+  Left = 220
   Height = 568
-  Top = 93
+  Top = 120
   Width = 464
   BorderStyle = bsDialog
   Caption = 'Главное меню'
@@ -23959,6 +23959,7 @@ object Form1: TForm1
     top = 352
   end
   object Timer1: TTimer
+    Interval = 2500
     OnTimer = Timer1Timer
     left = 360
     top = 448
