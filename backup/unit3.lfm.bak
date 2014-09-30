@@ -1,12 +1,12 @@
 object Form4: TForm4
-  Left = 451
-  Height = 441
-  Top = 294
-  Width = 701
+  Left = 120
+  Height = 669
+  Top = 135
+  Width = 806
   BorderStyle = bsDialog
   Caption = 'Офис'
-  ClientHeight = 441
-  ClientWidth = 701
+  ClientHeight = 669
+  ClientWidth = 806
   Color = clHighlightText
   OnCreate = FormCreate
   LCLVersion = '1.2.4.0'
@@ -27,7 +27,7 @@ object Form4: TForm4
     ParentFont = False
     TabOrder = 0
     object Label1: TLabel
-      Left = 8
+      Left = 2
       Height = 19
       Top = 8
       Width = 89
@@ -42,7 +42,7 @@ object Form4: TForm4
       ParentFont = False
     end
     object Label2: TLabel
-      Left = 8
+      Left = 0
       Height = 19
       Top = 40
       Width = 91
@@ -57,7 +57,7 @@ object Form4: TForm4
       ParentFont = False
     end
     object Label3: TLabel
-      Left = 8
+      Left = 0
       Height = 19
       Top = 72
       Width = 145
@@ -72,7 +72,7 @@ object Form4: TForm4
       ParentFont = False
     end
     object Label4: TLabel
-      Left = 8
+      Left = 0
       Height = 19
       Top = 104
       Width = 191
@@ -87,7 +87,7 @@ object Form4: TForm4
       ParentFont = False
     end
     object Label5: TLabel
-      Left = 8
+      Left = 0
       Height = 19
       Top = 136
       Width = 161
@@ -102,7 +102,7 @@ object Form4: TForm4
       ParentFont = False
     end
     object balance: TLabel
-      Left = 160
+      Left = 152
       Height = 19
       Top = 72
       Width = 62
@@ -117,42 +117,49 @@ object Form4: TForm4
       ParentFont = False
     end
     object label229: TLabel
-      Left = 104
+      Left = 96
       Height = 19
       Top = 40
-      Width = 108
-      Caption = '%persname%'
+      Width = 92
+      Caption = 'persname%'
       ParentColor = False
     end
     object label228: TLabel
-      Left = 104
+      Left = 96
       Height = 19
       Top = 8
-      Width = 103
-      Caption = '%company%'
+      Width = 87
+      Caption = 'company%'
       ParentColor = False
     end
     object telefon: TLabel
-      Left = 208
+      Left = 200
       Height = 19
       Top = 104
-      Width = 84
-      Caption = '%telefon%'
+      Width = 68
+      Caption = 'telefon%'
       ParentColor = False
     end
     object status: TLabel
-      Left = 176
-      Height = 19
-      Top = 136
-      Width = 146
+      Left = 168
+      Height = 16
+      Top = 139
+      Width = 123
       Caption = 'Ничего не делаем.'
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
       ParentColor = False
+      ParentFont = False
     end
   end
   object GroupBox2: TGroupBox
-    Left = 424
+    Left = 8
     Height = 128
-    Top = 8
+    Top = 176
     Width = 273
     Caption = 'Продажи'
     ClientHeight = 110
@@ -191,9 +198,9 @@ object Form4: TForm4
     end
   end
   object GroupBox3: TGroupBox
-    Left = 8
+    Left = 368
     Height = 256
-    Top = 176
+    Top = 0
     Width = 440
     Caption = 'Разработка'
     ClientHeight = 238
@@ -480,10 +487,10 @@ object Form4: TForm4
     end
   end
   object Button1: TButton
-    Left = 600
-    Height = 34
-    Top = 408
-    Width = 97
+    Left = 904
+    Height = 26
+    Top = 432
+    Width = 92
     Caption = 'Обновить'
     Font.CharSet = RUSSIAN_CHARSET
     Font.Height = -15
@@ -496,9 +503,9 @@ object Form4: TForm4
     TabOrder = 3
   end
   object Label9: TLabel
-    Left = 456
+    Left = 8
     Height = 15
-    Top = 192
+    Top = 304
     Width = 145
     Caption = 'Общая цена разработки :'
     Font.CharSet = RUSSIAN_CHARSET
@@ -510,26 +517,10 @@ object Form4: TForm4
     ParentColor = False
     ParentFont = False
   end
-  object Label10: TLabel
-    Left = 598
-    Height = 15
-    Top = 360
-    Width = 3
-    Caption = ' '
-    Font.CharSet = RUSSIAN_CHARSET
-    Font.Height = -12
-    Font.Name = 'Arial'
-    Font.Pitch = fpVariable
-    Font.Quality = fqDraft
-    Font.Style = [fsBold]
-    ParentColor = False
-    ParentFont = False
-    OnClick = Label10Click
-  end
   object cena: TLabel
-    Left = 608
+    Left = 160
     Height = 15
-    Top = 192
+    Top = 304
     Width = 7
     Caption = '0'
     Font.CharSet = RUSSIAN_CHARSET
@@ -540,5 +531,33 @@ object Form4: TForm4
     Font.Style = [fsBold]
     ParentColor = False
     ParentFont = False
+  end
+  object Button3: TButton
+    Left = 689
+    Height = 26
+    Top = 293
+    Width = 112
+    Caption = 'Разработать'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -15
+    Font.Name = 'Arial Black'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = Button3Click
+    ParentFont = False
+    TabOrder = 4
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 500
+    OnTimer = Timer1Timer
+    left = 512
+    top = 368
+  end
+  object Timer2: TTimer
+    OnTimer = Timer2Timer
+    left = 504
+    top = 464
   end
 end
